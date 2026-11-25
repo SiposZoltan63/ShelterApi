@@ -1,23 +1,160 @@
 [
   {
-    "ContainingType": "ShelterApi.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "ShelterApi.Controllers.AnimalsController",
+    "Method": "AllAnimal",
+    "RelativePath": "api/Animals/AllAnimal",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShelterApi.Controllers.AnimalsController",
+    "Method": "AnimalById",
+    "RelativePath": "api/Animals/AnimalById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ShelterApi.WeatherForecast, ShelterApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShelterApi.Controllers.AnimalsController",
+    "Method": "DeleteAnimal",
+    "RelativePath": "api/Animals/DeleteAnimal",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShelterApi.Controllers.AnimalsController",
+    "Method": "NewAnimal",
+    "RelativePath": "api/Animals/NewAnimal",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NewAnimalsDto",
+        "Type": "ShelterApi.Models.DTOs.NewAnimalsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShelterApi.Controllers.AnimalsController",
+    "Method": "UpdateAnimal",
+    "RelativePath": "api/Animals/UpdateAnimal",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "updateAnimalsDto",
+        "Type": "ShelterApi.Models.DTOs.UpdateAnimalsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShelterApi.Controllers.SheltersController",
+    "Method": "AllShelter",
+    "RelativePath": "users/allShelter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShelterApi.Controllers.SheltersController",
+    "Method": "DeleteShelter",
+    "RelativePath": "users/deleteShelter",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShelterApi.Controllers.SheltersController",
+    "Method": "NewShelter",
+    "RelativePath": "users/newShelter",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NewShelterDto",
+        "Type": "ShelterApi.Models.DTOs.NewSheltersDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShelterApi.Controllers.SheltersController",
+    "Method": "ShelterById",
+    "RelativePath": "users/ShelterbyId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShelterApi.Controllers.SheltersController",
+    "Method": "UpdateShelter",
+    "RelativePath": "users/UpdateShelter",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "updateShelterDto",
+        "Type": "ShelterApi.Models.DTOs.UpdateSheltersDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

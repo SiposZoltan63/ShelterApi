@@ -6,5 +6,6 @@
         public int Species { get; set; }
         public int Age { get; set; }
         public double Weight { get; set; }
+        public Guid ShleterID { get; set; }
     }
 }

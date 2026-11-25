@@ -13,7 +13,7 @@ namespace ShelterApi.Models
         public double Weight { get; set; }
 
         public DateTime RegTime { get; set; }
-        public string? ShelterId { get; set; }
+        public Guid ShelterId { get; set; }
         public virtual ICollection<Shelters> Shelter { get; set; } = new List<Shelters>();
 
     }

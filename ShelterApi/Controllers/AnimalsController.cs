@@ -29,6 +29,7 @@ namespace ShelterApi.Controllers
                 Age = NewAnimalsDto.Age,
                 Weight = NewAnimalsDto.Weight,
                 RegTime = DateTime.Now,
+                ShelterId = NewAnimalsDto.ShleterID,
             };
             if (animals is not null)
             {
