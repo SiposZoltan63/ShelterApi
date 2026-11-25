@@ -57,6 +57,18 @@
         }
       }
     },
+    "/api/Animals/allSheltersWithAnimals": {
+      "get": {
+        "tags": [
+          "Animals"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Animals/AnimalById": {
       "get": {
         "tags": [

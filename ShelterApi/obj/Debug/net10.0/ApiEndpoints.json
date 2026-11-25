@@ -11,6 +11,16 @@
   },
   {
     "ContainingType": "ShelterApi.Controllers.AnimalsController",
+    "Method": "allSheltersWithAnimals",
+    "RelativePath": "api/Animals/allSheltersWithAnimals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShelterApi.Controllers.AnimalsController",
     "Method": "AnimalById",
     "RelativePath": "api/Animals/AnimalById",
     "HttpMethod": "GET",

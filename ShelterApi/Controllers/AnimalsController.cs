@@ -49,6 +49,17 @@ namespace ShelterApi.Controllers
             }
             return StatusCode(400, new { message = "Hiba", result = animals });
         }
+        [HttpGet("allSheltersWithAnimals")]
+        public async Task<IActionResult> allSheltersWithAnimals()
+        {
+            var animals = await _context.Animals.ToListAsync();
+            var shelter = await _context.Shelters.ToListAsync();
+            if (animals is not null && shelter is not null)
+            {
+                return StatusCode(201, new { message = "Lekérdezve", result = animals,shelter, });
+            }
+            return StatusCode(400, new { message = "Hiba", result = animals,shelter, });
+        }
         [HttpGet("AnimalById")]
         public async Task<IActionResult> AnimalById([FromQuery] Guid id)
         {
