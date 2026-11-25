@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
+using ShelterApi.Models;
 
 namespace ShelterApi
 {
@@ -11,7 +12,7 @@ namespace ShelterApi
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddDbContext<AddDbContext>(options => options.UseMySQL(builder.Configuration.GetConnectionString("MySql")));
+            builder.Services.AddDbContext<AnimalShelterContext>(options => options.UseMySQL(builder.Configuration.GetConnectionString("MySql")));
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

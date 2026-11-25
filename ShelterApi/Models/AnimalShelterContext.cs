@@ -5,18 +5,18 @@ using System.Data;
 
 namespace ShelterApi.Models
 {
-    public partial class AddDbContext
+    public partial class AnimalShelterContext : DbContext
     {
-        public AddDbContext() 
+        public AnimalShelterContext()
         {
         }
-        public AddDbContext(DbContextOptions<AddDbContext> options): base(options)
+        public AnimalShelterContext(DbContextOptions<AnimalShelterContext> options): base(options)
         {
         }
 
-        public virtual DbSet<animals> Animals { get; set; }
+        public virtual DbSet<Animals> Animals { get; set; }
 
-        public virtual DbSet<shelters> Shelters { get; set; }
+        public virtual DbSet<Shelters> Shelters { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Animals>(entity =>
